@@ -95,7 +95,7 @@
             bindings = <
 &kp UNDERSCORE   &kp TILDE    &kp F3    &kp F4      &kp PLUS     &kp MINUS     &kp EQUAL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET     &kp AMPS   &kp STAR   &kp LPAR          &kp RPAR
-&kp N0           &kp N1       &kp N2    &kp N3      &kp N5       &kp NUMBER_6  &kp N7     &kp N8     &kp N9            &kp N0
+&kp N1           &kp N2       &kp N3    &kp N4      &kp N5       &kp N6        &kp N7     &kp N8     &kp N9            &kp N0
                               &trans    &trans      &lt 3 TAB                  &trans     &trans     &trans
             >;
         };
@@ -123,7 +123,7 @@
 &none           &mkp MB1        &msc SCRL_DOWN  &mkp MB2         &none  &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_DOWN
 &kp LCTRL       &msc SCRL_RIGHT &msc SCRL_UP    &msc SCRL_LEFT   &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP
 &kp LEFT_SHIFT  &kp X           &kp C           &kp V            &none  &none  &msc SCRL_RIGHT &mkp MB3        &msc SCRL_LEFT   &mkp MB3
-                                &none           &none            &none         &mkp MB1        &mkp MB2        &mkp MB3
+                                &none           &none            &none         &mkp MB1        &mkp MB1        &mkp MB1
             >;
         };
 
