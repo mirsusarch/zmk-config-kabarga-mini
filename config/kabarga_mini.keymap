@@ -35,37 +35,6 @@
 };
 
 / {
-    macros {
-        numdot: numdot {
-            label = "ZM_numdot";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-
-        grtsgn: grtsgn {
-            label = "ZM_grtsgn";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N6 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-    };
 };
 
 / {
@@ -134,10 +103,10 @@
             //                  | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&kp C_VOL_UP  &kp PG_UP  &kp C_PP       &kp HOME  &kp C_PAUSE  &kp N0    &kp HOME     &kp C_PP  &kp PG_UP  &kp C_VOL_UP
-&kp C_VOL_DN  &kp LEFT   &kp UP         &kp DOWN  &kp RIGHT    &kp LEFT  &kp DOWN     &kp UP    &kp RIGHT  &kp C_VOL_DN
-&kp C_MUTE    &kp PG_DN  &kp LG(LS(S))  &kp END   &kp C_PLAY   &kp N0    &kp END      &grtsgn   &kp PG_DN  &kp C_MUTE
-                         &trans         &trans    &lt ADJ RET            &lt ADJ ESC  &trans    &trans
+&none     &none  &kp END  &none      &none     &none             &none     &kp LS(LA(N5))  &none              &kp UP
+&kp HOME  &none  &kp DEL  &kp RIGHT  &none     &kp LA(LC(LEFT))  &none     &none           &kp LA(LC(RIGHT))  &none
+&none     &none  &none    &none      &kp LEFT  &kp DOWN          &kp HOME  &none           &none              &studio_unlock
+                 &trans   &trans     &none                       &none     &trans          &trans
             >;
         };
 
