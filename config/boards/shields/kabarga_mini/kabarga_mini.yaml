@@ -1,0 +1,21 @@
+identifier: kabarga_mini
+name: kabarga_mini
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
+  - counter
+  - usb_device
+  - nvs
+  - can
+  - kscan
+  - ble
+  - adc
+  - ieee802154
+  - pwm
+  - watchdog
+  - gpio
