@@ -79,6 +79,15 @@
         };
     };
 
+    macros {
+        worck_flow: worck_flow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp Y &kp LS(A) &kp N4 &kp V &kp LS(Z) &kp LS(Y) &kp X>;
+            label = "WORCK_FLOW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -111,7 +120,7 @@
 
         adjust_layer {
             bindings = <
-&bt BT_CLR    &none         &none         &none         &none         &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &none   &bt BT_CLR
+&bt BT_CLR    &none         &none         &none         &worck_flow   &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &none   &bt BT_CLR
 &none         &none         &none         &none         &none         &none         &none         &none         &none   &none
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none         &none   &ext_power EP_OFF
                             &trans        &none         &trans                      &trans        &none         &trans
