@@ -79,8 +79,13 @@
         };
 
         tast_macro {
-            bindings = <&test_selecting_line>;
+            bindings = <&test_selecting_line_left>;
             key-positions = <15 16>;
+        };
+
+        macro_right {
+            bindings = <&test_selecting_line_right>;
+            key-positions = <17 18>;
         };
     };
 
@@ -92,11 +97,18 @@
             label = "WORCK_FLOW";
         };
 
-        test_selecting_line: test_selecting_line {
+        test_selecting_line_left: test_selecting_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LEFT))>;
+            bindings = <&kp LC(LEFT)>;
             label = "TEST_SELECTING_LINE";
+        };
+
+        test_selecting_line_right: test_selecting_line_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>;
+            label = "TEST_SELECTING_LINE_RIGHT";
         };
     };
 
