@@ -92,6 +92,11 @@
             bindings = <&alt_shift>;
             key-positions = <3 4>;
         };
+
+        workflow {
+            bindings = <&worck_flow>;
+            key-positions = <33 34 35>;
+        };
     };
 
     macros {
