@@ -87,6 +87,11 @@
             bindings = <&test_selecting_line_right>;
             key-positions = <17 18>;
         };
+
+        langu {
+            bindings = <&alt_shift>;
+            key-positions = <3 4>;
+        };
     };
 
     macros {
@@ -110,6 +115,13 @@
             bindings = <&kp LC(RIGHT)>;
             label = "TEST_SELECTING_LINE_RIGHT";
         };
+
+        alt_shift: alt_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            label = "ALT_SHIFT";
+        };
     };
 
     keymap {
@@ -126,10 +138,10 @@
 
         lower_layer {
             bindings = <
-&kp UNDERSCORE         &kp TILDE    &kp F3    &kp F4      &kp PLUS      &kp MINUS  &kp EQUAL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mt LCTRL EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT   &kp CARET  &kp AMPS   &kp STAR   &kp LPAR          &mt RCTRL RPAR
-&mt LSHIFT N1          &mt LWIN N2  &kp N3    &kp N4      &kp NUMBER_5  &kp N6     &kp N7     &kp N8     &mt RWIN N9       &mt RSHFT N0
-                                    &trans    &trans      &lt 3 TAB                &trans     &trans     &trans
+&kp UNDERSCORE         &kp TILDE    &kp F3    &kp F4      &kp PLUS     &kp MINUS  &kp EQUAL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mt LCTRL EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR          &mt RCTRL RPAR
+&mt LSHIFT N1          &mt LWIN N2  &kp N3    &kp N4      &kp N5       &kp N6     &kp N7     &kp N8     &mt RWIN N9       &mt RSHFT N0
+                                    &trans    &trans      &lt 3 TAB               &trans     &trans     &trans
             >;
         };
 
